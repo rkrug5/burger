@@ -13,6 +13,21 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//----------------------------------------------------------------------
+//adding stuff from the CatsApp - solved to try to get functionality
+//----------------------------------------------------------------------
+
+
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("public"));
+
+
+// Set Handlebars.
+var exphbs = require("express-handlebars");
+
+
+
+
 
 
 
